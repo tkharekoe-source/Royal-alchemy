@@ -26,31 +26,11 @@
     }
     .hero-section {
       position: relative;
-      background-image: url('https://raw.githubusercontent.com/tkharekoe-source/Royal-alchemy/refs/heads/main/file_0000000083d461fb807bb9e572a955da.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: 1;
+      background-color: #000;
     }
     .hero-content {
       position: relative;
       z-index: 2;
-    }
-    @media (max-width: 640px) {
-      .hero-title {
-        font-size: 2rem;
-      }
-      .hero-text {
-        font-size: 1rem;
-      }
     }
   </style>
 </head>
@@ -65,10 +45,9 @@
   </header>
 
   <section class="hero-section text-center py-40">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2 class="hero-title text-5xl font-extrabold mb-4">Transmute Your Business Vision</h2>
-      <p class="hero-text text-xl max-w-2xl mx-auto">Royal Alchemy transforms raw business ideas into structured, scalable realities. From logos to legacy structures, we craft every layer of your corporate identity.</p>
+      <h2 class="text-5xl font-extrabold mb-4">Transmute Your Business Vision</h2>
+      <p class="text-xl max-w-2xl mx-auto">Royal Alchemy transforms raw business ideas into structured, scalable realities. From logos to legacy structures, we craft every layer of your corporate identity.</p>
       <a href="#contact" class="mt-8 inline-block bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400">Start Your Alchemy</a>
     </div>
   </section>
@@ -93,22 +72,34 @@
 
   <section id="portfolio" class="py-20 px-6 bg-gray-800">
     <h3 class="text-4xl font-bold mb-10 text-center">Alchemy Transformations</h3>
-    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
       <div class="bg-gray-700 p-6 rounded-2xl">
-        <h5 class="text-2xl font-semibold mb-2">Before & After: Brand Forge</h5>
-        <p>See how we transformed a startup’s rough concept into a polished, resonant brand presence.</p>
+        <h5 class="text-xl font-semibold mb-2">Logo Alchemy</h5>
+        <p>Transformation of raw concepts into iconic brand symbols.</p>
       </div>
       <div class="bg-gray-700 p-6 rounded-2xl">
-        <h5 class="text-2xl font-semibold mb-2">SMME Structural Overhaul</h5>
-        <p>Case study on scaling a micro-enterprise into a structured, department-driven organization ready for investment.</p>
+        <h5 class="text-xl font-semibold mb-2">Structural Frameworks</h5>
+        <p>Micro-enterprise scaled into fully functional organizational design.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-2xl">
+        <h5 class="text-xl font-semibold mb-2">Vision Craft</h5>
+        <p>Building long-term business vision strategies for enduring impact.</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="py-20 px-6 text-center">
     <h3 class="text-4xl font-bold mb-6">Begin Your Transmutation</h3>
-    <p class="text-xl mb-6">Ready to forge your business into a legacy? Contact us to start your Royal Alchemy journey.</p>
-    <a href="mailto:alchemy@royalkharekoe.com" class="bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400">Email Us</a>
+    <p class="text-xl mb-6">Ready to forge your business into a legacy? Contact us through the form below or book a direct session.</p>
+    <form action="mailto:alchemy@royalkharekoe.com" method="post" enctype="text/plain" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-800 text-white">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-800 text-white">
+      <textarea name="message" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+      <button type="submit" class="w-full bg-yellow-500 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400">Send Inquiry</button>
+    </form>
+    <div class="mt-8">
+      <a href="https://wa.me/27659050975" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-400">Book on WhatsApp</a>
+    </div>
   </section>
 
   <a href="https://wa.me/27659050975" class="whatsapp-float" target="_blank">
